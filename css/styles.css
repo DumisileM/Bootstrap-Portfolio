@@ -1,17 +1,22 @@
+/* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;600;700;800;900&display=swap');
+/* Fonts end */
+
+/* Variables */
 :root{
     --accent-color: white;
+    --background-color: #054a29;
 }
 body{
     font-family: 'Raleway', sans-serif;
-    scroll-behavior: smooth;
-    
+    scroll-behavior: smooth;  
 }
+.navbar-brand {
+    font-size: 1.50rem;
 
-
-
+}
 .bg-dark {
-    background-color: #054a29!important;
+    background-color: var(--background-color) !important;
 }
 .navbar-dark .navbar-toggler {
     color: var(--accent-color);
@@ -34,6 +39,18 @@ body{
     font-size: 18px;
     
 }
+#footer{
+    display: flex;
+    justify-content: center;
+}
+#footer .navbar-nav {
+    display: flex;
+    flex-direction: row;
+}
+
+ 
+
+
 
 @media only screen and (max-width: 991.98px) {
     .navbar-dark .navbar-nav .nav-link{
@@ -46,6 +63,14 @@ body{
     .navbar-dark .navbar-nav .nav-link span:hover{
         border-bottom: 1px solid white;
     }
+    #footer .navbar-nav {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+  
+   
 
     
 }
