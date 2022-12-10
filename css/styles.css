@@ -1,17 +1,21 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@100;300;400;600;700;800;900&display=swap');
 /* Fonts end */
 
 /* Variables */
 :root{
     --text-color: white;
-    --background-color: #054a29;
+    
+    --primary: #054a29!important;
+    --normal-font-size:15px;
+    
 }
 /* body styling */
 body{
     font-family: 'Raleway', sans-serif;
     scroll-behavior: smooth; 
-    background-color: var(--background-color); 
+    background-color: var(--primary); 
 }
 /* body styling end */
 
@@ -21,7 +25,7 @@ body{
 
 }
 .bg-dark {
-    background-color: var(--background-color) !important;
+    background-color: var(--primary) !important;
 }
 .navbar-dark .navbar-toggler {
     color: var(--text-color);
@@ -36,7 +40,7 @@ body{
 }
 .navbar-dark .navbar-nav .nav-link {
     color: var(--text-color);
-    font-size: 15px;
+    font-size: var(--normal-font-size);
     padding: 0 1rem;
 }
 .navbar-dark .navbar-nav .nav-link:hover {
@@ -49,6 +53,7 @@ body{
 /* hero section */
 .jumbotron {
     background-color: #fefae0;
+    
 
    
 }
@@ -57,23 +62,45 @@ body{
     text-align: center;
     margin: 1rem;
 }
-.jumbotron h1 span {
-    color: var(--background-color);
+.jumbotron .heading{
+     justify-content: center;
+}
+.jumbotron .button{
+    border: 1px solid var(--primary);
+    background-color: #054a29;
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+    text-align: center;
+    padding: 1rem;
+    margin: 1rem;
+
+}
+
+
+.jumbotron span {
+    color: var(--primary);
     font-weight: bold;
-}  
+} 
+.bio p:first-of-type{
+    font-family:'Pacifico', cursive; 
+    font-size: xx-large;
+}
 .jumbotron ul {
     margin: 2rem;
     padding: 0;
     list-style: none;
 }
 #hero-bio{
-    justify-content: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
   
 
 }
 #profile-image{
-    border-radius: 50%;
-    border: 2px solid var(--background-color);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border: 2px solid var(--primary);
     padding:0;
     margin: 2rem;
    
