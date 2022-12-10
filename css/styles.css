@@ -70,7 +70,6 @@ body{
     background-color: #054a29;
     text-decoration: none;
     color: white;
-    font-size: larger;
     text-align: center;
     padding: 1rem;
     margin: 1rem;
@@ -81,6 +80,7 @@ body{
 .jumbotron span {
     color: var(--primary);
     font-weight: bold;
+    font-size: xx-large;
 } 
 .bio p:first-of-type{
     font-family:'Pacifico', cursive; 
@@ -94,15 +94,23 @@ body{
 #hero-bio{
     justify-content: flex-start;
     flex-wrap: nowrap;
+    font-size: larger;
   
 
 }
+.bio{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
 #profile-image{
     border-top-left-radius: 50%;
     border-top-right-radius: 50%;
     border: 2px solid var(--primary);
     padding:0;
     margin: 2rem;
+    width: 200px;
    
 }
 
@@ -147,4 +155,15 @@ body{
    
 
     
+}
+@media only screen and (max-width: 767.97px){
+    #hero-bio{
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        
+    }
+    #profile-image{
+        margin-left: 0;
+    }
+
 }
