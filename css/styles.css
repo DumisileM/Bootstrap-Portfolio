@@ -4,13 +4,18 @@
 
 /* Variables */
 :root{
-    --accent-color: white;
+    --text-color: white;
     --background-color: #054a29;
 }
+/* body styling */
 body{
     font-family: 'Raleway', sans-serif;
-    scroll-behavior: smooth;  
+    scroll-behavior: smooth; 
+    background-color: var(--background-color); 
 }
+/* body styling end */
+
+/* navigation  */
 .navbar-brand {
     font-size: 1.50rem;
 
@@ -19,8 +24,8 @@ body{
     background-color: var(--background-color) !important;
 }
 .navbar-dark .navbar-toggler {
-    color: var(--accent-color);
-    border-color: var(--accent-color);
+    color: var(--text-color);
+    border-color: var(--text-color);
     border-radius:0 !important;
 }
 .navbar-nav{
@@ -30,23 +35,65 @@ body{
 
 }
 .navbar-dark .navbar-nav .nav-link {
-    color: var(--accent-color);
+    color: var(--text-color);
     font-size: 15px;
     padding: 0 1rem;
 }
 .navbar-dark .navbar-nav .nav-link:hover {
-    border-bottom: 1px solid var(--accent-color);
+    border-bottom: 1px solid var(--text-color);
     font-size: 18px;
     
 }
+/* navigation end */
+
+/* hero section */
+.jumbotron {
+    background-color: #fefae0;
+
+   
+}
+
+.jumbotron h1{
+    text-align: center;
+    margin: 1rem;
+}
+.jumbotron h1 span {
+    color: var(--background-color);
+    font-weight: bold;
+}  
+.jumbotron ul {
+    margin: 2rem;
+    padding: 0;
+    list-style: none;
+}
+#hero-bio{
+    justify-content: center;
+  
+
+}
+#profile-image{
+    border-radius: 50%;
+    border: 2px solid var(--background-color);
+    padding:0;
+    margin: 2rem;
+   
+}
+
+
+/* hero section end */
+
+/* footer */
 #footer{
     display: flex;
     justify-content: center;
+   
+    
 }
 #footer .navbar-nav {
     display: flex;
     flex-direction: row;
 }
+/* footer end */
 
  
 
