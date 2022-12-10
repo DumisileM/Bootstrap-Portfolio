@@ -15,7 +15,7 @@
 body{
     font-family: 'Raleway', sans-serif;
     scroll-behavior: smooth; 
-    background-color: var(--primary); 
+    background-color:  #fefae0
 }
 /* body styling end */
 
@@ -32,6 +32,16 @@ body{
     border-color: var(--text-color);
     border-radius:0 !important;
 }
+.navbar-dark .navbar-toggler:hover{
+ 
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 1);
+    border:2px solid white;
+}
+.navbar-toggler-icon:hover {
+   
+    width: 1.7em;
+}
+
 .navbar-nav{
     margin-left: auto;
     margin-right: 0 !important;
@@ -52,7 +62,7 @@ body{
 
 /* hero section */
 .jumbotron {
-    background-color: #fefae0;
+    background-color: transparent;
     
 
    
@@ -65,9 +75,9 @@ body{
 .jumbotron .heading{
      justify-content: center;
 }
-.jumbotron .button{
+.button{
     border: 1px solid var(--primary);
-    background-color: #054a29;
+    background-color: var(--primary);
     text-decoration: none;
     color: white;
     text-align: center;
@@ -76,7 +86,12 @@ body{
 
 }
 
-
+.button:hover{
+    border: 2px solid black;
+    background-color: #5bba6f;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.7)
+    
+}
 .jumbotron span {
     color: var(--primary);
     font-weight: bold;
@@ -116,7 +131,28 @@ body{
 
 
 /* hero section end */
-
+/* main */
+.work{
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+    background-color: #e9ecef;
+    border-radius: 0.3rem;
+}
+#work h2{ 
+    color: var(--primary);
+    font-weight: bold;
+    font-size: xx-large;
+    border-right: 5px solid var(--primary)
+}
+.card{
+    width:100%;
+    background-color:  #fefae0;
+    border:none;
+}
+#horiseon img{
+   
+}
+/* main end */
 /* footer */
 #footer{
     display: flex;
