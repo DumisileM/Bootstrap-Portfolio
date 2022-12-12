@@ -102,11 +102,7 @@ a:hover{
     font-family:'Pacifico', cursive; 
     font-size: xx-large;
 }
-.jumbotron ul {
-    margin: 2rem;
-    padding: 0;
-    list-style: none;
-}
+
 #hero-bio{
     justify-content: flex-start;
     flex-wrap: nowrap;
@@ -134,7 +130,9 @@ a:hover{
 
 /* hero section end */
 /* main */
-
+ul {
+    list-style: none;
+}
 #work{
     padding: 2rem 1rem;
     margin-bottom: 2rem;
@@ -144,12 +142,21 @@ a:hover{
 
     
 }
-#work h2{ 
+h2{ 
     color: var(--primary);
     font-weight: bold;
     font-size: xx-large;
     border-right: 2px solid var(--primary)
 }
+h3 {
+    font-weight: bold;
+}
+#project-container{
+    margin-left: 0;
+    margin-right: 0;
+    
+}
+
 .card{
     
     background-color:  #fefae0;
@@ -166,18 +173,30 @@ a:hover{
     padding:4px;
     width: 140px;
     border-radius: 0.3rem;
-    margin: 0;
-    
-   
-   
+    margin: 0;   
 }
 
 
 .projects{
-    flex-wrap: nowrap;    
+   justify-content: space-between;
 }
 
 /* main end */
+
+/* About and Contact section */
+form{
+    margin-bottom: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+}
+
+.input-area {
+    margin-bottom: 5px;
+}
+/* About and Contact section  End*/
 /* footer */
 #footer{
     display: flex;
@@ -193,9 +212,7 @@ a:hover{
 
  
 
-
-
-@media only screen and (max-width: 991.98px) {
+ @media only screen and (max-width: 991.98px) {
     .navbar-dark .navbar-nav .nav-link{
         padding-bottom: 1rem;
         padding:1rem 0px;
@@ -210,7 +227,14 @@ a:hover{
         display: flex;
         flex-direction: column;
     }
-    
+    .projects{
+        flex-wrap: wrap;    
+    }
+    h2 {
+        border-right:none;
+        border-bottom:2px solid var(--primary);
+        margin: 2rem;
+    } 
     
   
    
@@ -226,5 +250,9 @@ a:hover{
     #profile-image{
         margin-left: 0;
     }
-
-}
+    .projects{
+        flex-wrap: wrap;    
+    }
+   
+    
+} 
