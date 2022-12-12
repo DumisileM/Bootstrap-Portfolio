@@ -10,7 +10,7 @@ This portfolio was made using  Bootstrap, CSS and HTML to make it responsive. Ex
 
 ## Installation/Access
 The portfolio has been deployed on GitHub pages and can be accessed via this link:  
-https://dumisilem.github.io/Dumisile_Portfolio/
+https://dumisilem.github.io/Bootstrap-Portfolio/
 
 
 
@@ -30,7 +30,7 @@ For reference, this is what the website should look like:
 ![portfolio screenshot](./images/bootstrap_portfolio_big_screen.png)
 
 #### On Small screens
-![portfolio screenshot](./images/bootstrap_portfolio_small_screen.png)
+![portfolio screenshot](./images/bootstrap_portfolio_smaller_screens.png)
 
 
 
